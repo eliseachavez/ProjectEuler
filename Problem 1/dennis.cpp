@@ -17,17 +17,13 @@ int main()
         y = i * 5;
         
         if(x < 1000)
-        {
             three += x;
-        }
+            
         if(y < 1000)
-        {
             five += y;
-        }
+        
         if(x % 5 == 0)
-        {
             three -= x;
-        }
     }
     
     cout << "total " << three + five << endl;
