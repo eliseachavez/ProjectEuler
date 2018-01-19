@@ -18,10 +18,11 @@ int main()
         
         if(x < 1000)
             three += x;
-            
+        
         if(y < 1000)
             five += y;
         
+        //subtract x if the value is calculated as a multiple of five.
         if(x % 5 == 0)
             three -= x;
     }
