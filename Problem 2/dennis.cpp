@@ -21,6 +21,3 @@ int main()
     cout << print << endl;
     return 0;
 }
-
-
-//answer is 4613732
