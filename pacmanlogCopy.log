@@ -1,0 +1,842 @@
+[2018-05-29 13:03] [PACMAN] Running 'pacman --noconfirm --cachedir /var/cache/pacman/pkg --config /opt/pacman-mhwd.conf --root / --needed -Sy xf86-video-ati xf86-video-amdgpu xf86-video-intel xf86-video-nouveau vulkan-intel vulkan-radeon libva-mesa-driver libva-vdpau-driver mesa-vdpau lib32-vulkan-intel lib32-vulkan-radeon lib32-libva-vdpau-driver lib32-mesa-vdpau'
+[2018-05-29 13:03] [PACMAN] synchronizing package lists
+[2018-05-29 13:03] [ALPM] transaction started
+[2018-05-29 13:03] [ALPM] installed xf86-video-ati (1:18.0.1-1)
+[2018-05-29 13:03] [ALPM] installed xf86-video-amdgpu (18.0.1-1)
+[2018-05-29 13:03] [ALPM] installed libxvmc (1.0.10-1)
+[2018-05-29 13:03] [ALPM] installed xf86-video-intel (1:2.99.917+812+g75795523-1)
+[2018-05-29 13:03] [ALPM-SCRIPTLET] >>> This driver now uses DRI3 as the default Direct Rendering
+[2018-05-29 13:03] [ALPM-SCRIPTLET]     Infrastructure. You can try falling back to DRI2 if you run
+[2018-05-29 13:03] [ALPM-SCRIPTLET]     into trouble. To do so, save a file with the following 
+[2018-05-29 13:03] [ALPM-SCRIPTLET]     content as /etc/X11/xorg.conf.d/20-intel.conf :
+[2018-05-29 13:03] [ALPM-SCRIPTLET]       Section "Device"
+[2018-05-29 13:03] [ALPM-SCRIPTLET]         Identifier  "Intel Graphics"
+[2018-05-29 13:03] [ALPM-SCRIPTLET]         Driver      "intel"
+[2018-05-29 13:03] [ALPM-SCRIPTLET]         Option      "DRI" "2"             # DRI3 is now default 
+[2018-05-29 13:03] [ALPM-SCRIPTLET]         #Option      "AccelMethod"  "sna" # default
+[2018-05-29 13:03] [ALPM-SCRIPTLET]         #Option      "AccelMethod"  "uxa" # fallback
+[2018-05-29 13:03] [ALPM-SCRIPTLET]       EndSection
+[2018-05-29 13:03] [ALPM] installed xf86-video-nouveau (1.0.15-2)
+[2018-05-29 13:03] [ALPM] installed vulkan-intel (17.3.7-1)
+[2018-05-29 13:03] [ALPM] installed vulkan-radeon (17.3.7-1)
+[2018-05-29 13:03] [ALPM] installed libva-mesa-driver (17.3.7-1)
+[2018-05-29 13:03] [ALPM] installed libva-vdpau-driver (0.7.4-3)
+[2018-05-29 13:03] [ALPM] installed mesa-vdpau (17.3.7-1)
+[2018-05-29 13:03] [ALPM] installed lib32-vulkan-intel (17.3.7-1)
+[2018-05-29 13:03] [ALPM] installed lib32-vulkan-radeon (17.3.7-1)
+[2018-05-29 13:03] [ALPM] installed lib32-libva (1.8.3-1)
+[2018-05-29 13:03] [ALPM] installed lib32-libvdpau (1.1.1-2)
+[2018-05-29 13:03] [ALPM] installed lib32-libva-vdpau-driver (0.7.4-5)
+[2018-05-29 13:03] [ALPM] installed lib32-mesa-vdpau (17.3.7-1)
+[2018-05-29 13:03] [ALPM] transaction completed
+[2018-05-29 13:03] [ALPM] running 'systemd-update.hook'...
+[2018-05-30 17:23] [PACMAN] Running 'pacman -S tree'
+[2018-05-31 03:57] [PACMAN] Running 'pacman -Syu'
+[2018-05-31 03:57] [PACMAN] synchronizing package lists
+[2018-05-31 03:58] [PACMAN] Running 'pacman -Syu'
+[2018-05-31 03:58] [PACMAN] synchronizing package lists
+[2018-05-31 04:00] [PACMAN] Running 'pacman -Syu base-devel yaourt'
+[2018-05-31 04:00] [PACMAN] synchronizing package lists
+[2018-05-31 04:01] [ALPM] transaction started
+[2018-05-31 04:01] [ALPM] upgraded archlinux-keyring (20180322-1 -> 20180404-1)
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Appending keys from archlinux.gpg...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Locally signing trusted keys in keyring...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key DDB867B92AA789C165EEFA799B729B06A680C281...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 684148BB25B49E986A4944C55184252D824B18E8...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 91FFE0700E80619CEB73235CA88E23E377514E00...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key AB19265E5D7D20687D303246BA1DFB64FFF979E7...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 0E8B644079F599DFC1DDC3973348882F6AC6A4C2...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Importing owner trust values...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Disabling revoked keys in keyring...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 7FA647CD89891DEDC060287BB9113D1ED21E1A55...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key D4DE5ABDE2A7287644EAC7E36D1A9E70E19DAA50...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 40440DC037C05620984379A6761FAD69BA06C6A9...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key B1F2C889CB2CCB2ADA36D963097D629E437520BD...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key BC1FBE4D2826A0B51E47ED62E2539214C6C11350...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 63F395DE2D6398BBE458F281F2DBB4931985A992...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 8F76BEEA0289F9E1D3E229C05F946DED983D4366...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 4FCF887689C41B09506BE8D5F3E1D5C5D30DB0AD...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 81D7F8241DB38BC759C80FCE3A726C6170E80477...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 5E7585ADFF106BFFBBA319DC654B877A0864983E...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key E7210A59715F6940CF9A4E36A001876699AD6E84...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key F5A361A3A13554B85E57DDDAAF7EF7873CFD4BB6...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 8CF934E339CAD8ABF342E822E711306E3C4F88BC...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 5696C003B0854206450C8E5BE613C09CB4440678...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 9515D8A8EAB88E49BB65EDBCE6B456CAF15447D5...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 4A8B17E20B88ACA61860009B5CED81B7C2E5C0D2...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 0B20CA1931F5DA3A70D0F8D2EA6836E1AB441196...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 34C5D94FE7E7913E86DC427E7FB1A3800C84C0A5...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 39F880E50E49A4D11341E8F939E4F17F295AFBF4...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 66BD74A036D522F51DD70A3C7F2A16726521E06D...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key DBE7D3DD8C81D58D0A13D0E76BC26A17B9B7018A...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 07DFD3A0BC213FA12EDC217559B3122E2FA915EC...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 44D4A033AC140143927397D47EFD567D4C7EA887...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 27FFC4769E19F096D41D9265A04F9397CDFD6BB0...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 8840BD07FC24CB7CE394A07CCF7037A4F27FB7DA...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Updating trust database...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] gpg: next trustdb check due at 2018-06-01
+[2018-05-31 04:01] [ALPM] upgraded manjaro-keyring (20171027-1 -> 20171027-2)
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Appending keys from manjaro.gpg...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Locally signing trusted keys in keyring...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 75C1B95A4D9514A57EB2DAE71817DC63CD3B5DF5...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 16DC688DF3EECC72323954237EC47C82A42D53A2...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 76C6E477042BFE985CC220BD9C08A255442FAFF0...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 2D14560CDCE6A75BB186DB758238651DDF5E0594...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key B4663188A692DB1E45A98EE95BD96CC4247B52CC...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 04BB537F5BC2D399BFA72F8F17C752B61B2F2E90...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 35B4FF23EA9477582C2A0AF12B80869C5C0102A6...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 77DC01C9971AC3C39A0626F72C089F09AC97B894...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 39F0EC1AE50B37E5F3196F09DAD3B211663CA268...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key E4CDFE50A2DA85D58C8A8C70CAA6A59611C7F07E...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 7C89F4D439B2BFACF425107B62443D89B35859F8...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 22C903DE964E6FE321656E318DB9F8C18DF53602...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 5A97ED6B72418199F0C22B23137C934B5DCB998E...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 2C688B52E3FC0144B7484BABE3B3F44AC45EE0AA...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 1E7908935AAB9A00D6B47503363DFFFD59152F77...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Locally signing key 74C2F2CC05A0AB7D859839938934292D604F8BA2...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Importing owner trust values...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Disabling revoked keys in keyring...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key FAA6840E8C3FC7F89BEE0DC8AC7AB10BCB6CDD17...
+[2018-05-31 04:01] [ALPM-SCRIPTLET]   -> Disabling key 540DE7083B89314CF70EA6F0C1B1AD0DA80EBF3E...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] ==> Updating trust database...
+[2018-05-31 04:01] [ALPM-SCRIPTLET] gpg: next trustdb check due at 2018-06-01
+[2018-05-31 04:01] [ALPM] upgraded manjaro-system (20180319-1 -> 20180513-1)
+[2018-05-31 04:01] [ALPM] transaction completed
+[2018-05-31 04:01] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:40] [PACMAN] starting full system upgrade
+[2018-06-02 05:41] [PACMAN] Running 'pacman -S tree'
+[2018-06-02 05:41] [ALPM] transaction started
+[2018-06-02 05:41] [ALPM] reinstalled tree (1.7.0-2)
+[2018-06-02 05:41] [ALPM] transaction completed
+[2018-06-02 05:41] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:42] [PACMAN] Running 'pacman -S conky'
+[2018-06-02 05:42] [ALPM] transaction started
+[2018-06-02 05:42] [ALPM] reinstalled conky (1.10.8-2)
+[2018-06-02 05:42] [ALPM] transaction completed
+[2018-06-02 05:42] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:43] [PACMAN] Running 'pacman -S g++'
+[2018-06-02 05:43] [PACMAN] Running 'pacman -S gcc'
+[2018-06-02 05:43] [PACMAN] Running 'pacman -S redshift'
+[2018-06-02 05:43] [ALPM] transaction started
+[2018-06-02 05:43] [ALPM] installed redshift (1.12-1)
+[2018-06-02 05:43] [ALPM] transaction completed
+[2018-06-02 05:43] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 05:43] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:43] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 05:44] [PACMAN] Running 'pacman -S vim'
+[2018-06-02 05:44] [ALPM] transaction started
+[2018-06-02 05:44] [ALPM] upgraded vim-runtime (8.0.1542-2 -> 8.1.0022-1)
+[2018-06-02 05:44] [ALPM] upgraded vim (8.0.1542-2 -> 8.1.0022-1)
+[2018-06-02 05:44] [ALPM] transaction completed
+[2018-06-02 05:44] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 05:44] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:44] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 05:45] [PACMAN] Running 'pacman -S inxi'
+[2018-06-02 05:45] [PACMAN] Running 'pacman -S dmidecode'
+[2018-06-02 05:45] [ALPM] transaction started
+[2018-06-02 05:45] [ALPM] reinstalled dmidecode (3.1-2)
+[2018-06-02 05:45] [ALPM] transaction completed
+[2018-06-02 05:45] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:46] [PACMAN] Running 'pacman -S evincec'
+[2018-06-02 05:46] [PACMAN] Running 'pacman -S evince'
+[2018-06-02 05:46] [ALPM] transaction started
+[2018-06-02 05:46] [ALPM] installed libgxps (0.3.0-1)
+[2018-06-02 05:46] [ALPM] installed libspectre (0.2.8-1)
+[2018-06-02 05:46] [ALPM] installed djvulibre (3.5.27-3)
+[2018-06-02 05:46] [ALPM] installed t1lib (5.1.2-6)
+[2018-06-02 05:46] [ALPM] installed bubblewrap (0.2.1-1)
+[2018-06-02 05:46] [ALPM] installed gnome-desktop (1:3.28.2-1)
+[2018-06-02 05:46] [ALPM] installed evince (3.28.2-1)
+[2018-06-02 05:46] [ALPM] transaction completed
+[2018-06-02 05:46] [ALPM] running 'glib-compile-schemas.hook'...
+[2018-06-02 05:46] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 05:46] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:46] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 05:46] [PACMAN] Running 'pacman -S git'
+[2018-06-02 05:47] [PACMAN] Running 'pacman -S nautilus'
+[2018-06-02 05:47] [ALPM] transaction started
+[2018-06-02 05:47] [ALPM] installed libgexiv2 (0.10.8-1)
+[2018-06-02 05:47] [ALPM] installed tracker (2.0.3-2)
+[2018-06-02 05:47] [ALPM] installed nautilus-sendto (3.8.6+13+gff9b88f-1)
+[2018-06-02 05:47] [ALPM] installed gnome-autoar (0.2.3-1)
+[2018-06-02 05:47] [ALPM] installed libnautilus-extension (3.28.1-1.1)
+[2018-06-02 05:47] [ALPM] installed nautilus (3.28.1-1.1)
+[2018-06-02 05:47] [ALPM] transaction completed
+[2018-06-02 05:47] [ALPM] running 'glib-compile-schemas.hook'...
+[2018-06-02 05:47] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 05:47] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:47] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 05:47] [PACMAN] Running 'pacman -S ranger'
+[2018-06-02 05:47] [ALPM] transaction started
+[2018-06-02 05:47] [ALPM] reinstalled ranger (1.9.1-1)
+[2018-06-02 05:47] [ALPM] transaction completed
+[2018-06-02 05:47] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:47] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 05:55] [PACMAN] Running 'pacman -S firefox'
+[2018-06-02 05:56] [ALPM] running 'firefox-pre.hook'...
+[2018-06-02 05:56] [ALPM] transaction started
+[2018-06-02 05:56] [ALPM] installed mozilla-common (1.4-4)
+[2018-06-02 05:56] [ALPM-SCRIPTLET] relogin or source /etc/profile.d/mozilla-common.sh
+[2018-06-02 05:56] [ALPM] installed firefox (60.0.1-1)
+[2018-06-02 05:56] [ALPM] transaction completed
+[2018-06-02 05:56] [ALPM] running 'firefox-post.hook'...
+[2018-06-02 05:56] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 05:56] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 05:56] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 05:56] [PACMAN] Running 'pacman -S firefox-esr'
+[2018-06-02 05:56] [PACMAN] Running 'pacman -S firefox-esr-bin'
+[2018-06-02 06:00] [PACMAN] Running 'pacman -S gtk3.4'
+[2018-06-02 06:00] [PACMAN] Running 'pacman -S gtk-3.4'
+[2018-06-02 06:00] [PACMAN] Running 'pacman -S gtk-34'
+[2018-06-02 06:01] [PACMAN] Running 'pacman -S hunspell'
+[2018-06-02 06:01] [ALPM] transaction started
+[2018-06-02 06:01] [ALPM] reinstalled hunspell (1.6.2-1)
+[2018-06-02 06:01] [ALPM] transaction completed
+[2018-06-02 06:01] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:02] [PACMAN] Running 'pacman -S firefox'
+[2018-06-02 06:02] [ALPM] running 'firefox-pre.hook'...
+[2018-06-02 06:02] [ALPM] transaction started
+[2018-06-02 06:02] [ALPM] reinstalled firefox (60.0.1-1)
+[2018-06-02 06:02] [ALPM] transaction completed
+[2018-06-02 06:02] [ALPM] running 'firefox-post.hook'...
+[2018-06-02 06:02] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 06:02] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:02] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 06:10] [PACMAN] Running 'pacman -Syyu'
+[2018-06-02 06:10] [PACMAN] synchronizing package lists
+[2018-06-02 06:10] [PACMAN] starting full system upgrade
+[2018-06-02 06:26] [ALPM] transaction started
+[2018-06-02 06:26] [ALPM] removed pkg-config (0.29.2-1)
+[2018-06-02 06:26] [ALPM] upgraded linux-api-headers (4.14.8-1 -> 4.16.1-1)
+[2018-06-02 06:26] [ALPM] upgraded tzdata (2018c-1 -> 2018e-1)
+[2018-06-02 06:26] [ALPM] warning: /etc/passwd installed as /etc/passwd.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/gshadow installed as /etc/gshadow.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/fstab installed as /etc/fstab.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/resolv.conf installed as /etc/resolv.conf.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/shells installed as /etc/shells.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/shadow installed as /etc/shadow.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/crypttab installed as /etc/crypttab.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/hosts installed as /etc/hosts.pacnew
+[2018-06-02 06:26] [ALPM] warning: /etc/group installed as /etc/group.pacnew
+[2018-06-02 06:26] [ALPM] upgraded filesystem (2017.06-4.5 -> 2018.1-3)
+[2018-06-02 06:26] [ALPM] warning: /etc/locale.gen installed as /etc/locale.gen.pacnew
+[2018-06-02 06:26] [ALPM] upgraded glibc (2.26-11 -> 2.27-3)
+[2018-06-02 06:26] [ALPM-SCRIPTLET] Generating locales...
+[2018-06-02 06:26] [ALPM-SCRIPTLET]   en_US.UTF-8... done
+[2018-06-02 06:26] [ALPM-SCRIPTLET] Generation complete.
+[2018-06-02 06:26] [ALPM] upgraded gcc-libs (7.3.1+20180312-1 -> 8.1.0-1)
+[2018-06-02 06:26] [ALPM] upgraded pcre (8.41-1 -> 8.42-1)
+[2018-06-02 06:26] [ALPM] upgraded libutil-linux (2.31.1-1 -> 2.32-3)
+[2018-06-02 06:26] [ALPM] upgraded glib2 (2.54.3+2+g94b38beff-1 -> 2.56.1-1)
+[2018-06-02 06:26] [ALPM] upgraded e2fsprogs (1.44.0-1 -> 1.44.2-1)
+[2018-06-02 06:26] [ALPM] upgraded perl (5.26.1-2 -> 5.26.2-1)
+[2018-06-02 06:26] [ALPM] upgraded openssl (1.1.0.g-1 -> 1.1.0.h-1)
+[2018-06-02 06:26] [ALPM] upgraded libldap (2.4.45-4 -> 2.4.46-1)
+[2018-06-02 06:26] [ALPM] upgraded krb5 (1.16-1 -> 1.16.1-1)
+[2018-06-02 06:26] [ALPM] upgraded libtirpc (1.0.3-1 -> 1.0.3-2)
+[2018-06-02 06:26] [ALPM] upgraded pam (1.3.0-1 -> 1.3.0-2)
+[2018-06-02 06:26] [ALPM] upgraded libgpg-error (1.28-1 -> 1.31-1)
+[2018-06-02 06:26] [ALPM] upgraded lz4 (1:1.8.1.2-1 -> 1:1.8.2-2)
+[2018-06-02 06:26] [ALPM] upgraded xz (5.2.3-1 -> 5.2.4-1)
+[2018-06-02 06:26] [ALPM] upgraded libsystemd (238.51-1.1 -> 238.76-1)
+[2018-06-02 06:26] [ALPM] upgraded cryptsetup (2.0.2-1 -> 2.0.3-1)
+[2018-06-02 06:26] [ALPM] upgraded dbus (1.12.6-1 -> 1.12.8-1)
+[2018-06-02 06:26] [ALPM] upgraded kmod (24-1 -> 25-1)
+[2018-06-02 06:26] [ALPM] upgraded libidn (1.33-2 -> 1.34-2)
+[2018-06-02 06:26] [ALPM] upgraded util-linux (2.31.1-1 -> 2.32-3)
+[2018-06-02 06:26] [ALPM] upgraded libnftnl (1.0.9-1 -> 1.1.0-1)
+[2018-06-02 06:26] [ALPM] upgraded libusb (1.0.21-2 -> 1.0.22-1)
+[2018-06-02 06:26] [ALPM] upgraded systemd (238.51-1.1 -> 238.76-1)
+[2018-06-02 06:26] [ALPM] installed js52 (52.7.3-2)
+[2018-06-02 06:26] [ALPM] upgraded polkit (0.113+34+g29ba7af-1.1 -> 0.114-1.1)
+[2018-06-02 06:26] [ALPM] upgraded accountsservice (0.6.45-1 -> 0.6.49-1)
+[2018-06-02 06:26] [ALPM] upgraded acpid (2.0.28-1 -> 2.0.29-2)
+[2018-06-02 06:26] [ALPM] upgraded adapta-maia-theme (3.93.0.193-1 -> 3.93.1.18-1)
+[2018-06-02 06:26] [ALPM] upgraded icu (60.2-1 -> 61.1-1)
+[2018-06-02 06:26] [ALPM] upgraded libxml2 (2.9.8-1 -> 2.9.8-2)
+[2018-06-02 06:26] [ALPM] upgraded gdk-pixbuf2 (2.36.11-1 -> 2.36.12-1)
+[2018-06-02 06:26] [ALPM] upgraded harfbuzz (1.7.6-1 -> 1.7.6-2)
+[2018-06-02 06:26] [ALPM] upgraded freetype2 (2.9-2 -> 2.9.1-1)
+[2018-06-02 06:26] [ALPM] upgraded fontconfig (2.12.6+5+g665584a-1 -> 2.13.0+10+g58f5285-1)
+[2018-06-02 06:26] [ALPM-SCRIPTLET] Rebuilding fontconfig cache... done.
+[2018-06-02 06:26] [ALPM] upgraded cairo (1.15.10-1 -> 1.15.12-1)
+[2018-06-02 06:26] [ALPM] upgraded fribidi (1.0.1+8+gdf7252b-1 -> 1.0.2-1)
+[2018-06-02 06:26] [ALPM] upgraded pango (1.40.14-2 -> 1.42.1-1)
+[2018-06-02 06:26] [ALPM] upgraded librsvg (2:2.42.3-1 -> 2:2.42.4+8+g915a15b5-1)
+[2018-06-02 06:26] [ALPM] upgraded gtk-update-icon-cache (3.22.28-1 -> 3.22.30-1)
+[2018-06-02 06:26] [ALPM] upgraded adwaita-icon-theme (3.26.1-1 -> 3.28.0-1)
+[2018-06-02 06:26] [ALPM] upgraded alsa-firmware (1.0.29-1 -> 1.0.29-2)
+[2018-06-02 06:26] [ALPM] upgraded alsa-lib (1.1.5-1 -> 1.1.6-1)
+[2018-06-02 06:26] [ALPM] upgraded alsa-plugins (1.1.5-1 -> 1.1.6-2)
+[2018-06-02 06:26] [ALPM] upgraded fftw (3.3.7-1 -> 3.3.8-1)
+[2018-06-02 06:26] [ALPM] upgraded alsa-utils (1.1.5-2 -> 1.1.6-1)
+[2018-06-02 06:26] [ALPM] upgraded at-spi2-core (2.26.2-1 -> 2.28.0-1)
+[2018-06-02 06:26] [ALPM] upgraded atk (2.26.1-1 -> 2.28.1-1)
+[2018-06-02 06:26] [ALPM] upgraded at-spi2-atk (2.26.1-1 -> 2.26.2-1)
+[2018-06-02 06:26] [ALPM] installed libgusb (0.2.11-1)
+[2018-06-02 06:26] [ALPM] upgraded sqlite (3.22.0-1 -> 3.23.1-1)
+[2018-06-02 06:26] [ALPM] upgraded dconf (0.26.1-1 -> 0.28.0-1)
+[2018-06-02 06:26] [ALPM] installed colord (1.4.3-1)
+[2018-06-02 06:26] [ALPM] upgraded desktop-file-utils (0.23-1 -> 0.23+4+g92af410-1)
+[2018-06-02 06:26] [ALPM] upgraded libdaemon (0.14-3 -> 0.14-4)
+[2018-06-02 06:26] [ALPM] upgraded avahi (0.7-4 -> 0.7+4+gd8d8c67-1)
+[2018-06-02 06:26] [ALPM] upgraded libcups (2.2.6-4 -> 2.2.7-2)
+[2018-06-02 06:26] [ALPM] upgraded libepoxy (1.5.0-1 -> 1.5.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libxinerama (1.1.3-2 -> 1.1.3-3)
+[2018-06-02 06:26] [ALPM] upgraded libdrm (2.4.91-3 -> 2.4.92-1)
+[2018-06-02 06:26] [ALPM] upgraded wayland (1.14.0-1 -> 1.15.0-1)
+[2018-06-02 06:26] [ALPM] upgraded libxxf86vm (1.1.4-1 -> 1.1.4-2)
+[2018-06-02 06:26] [ALPM] upgraded lm_sensors (3.4.0-2 -> 3.4.0-4)
+[2018-06-02 06:26] [ALPM] upgraded mesa (17.3.7-1 -> 18.0.4-1)
+[2018-06-02 06:26] [ALPM] upgraded gsettings-desktop-schemas (3.24.1+3+ge869987-1 -> 3.28.0+1+g85521dc-1)
+[2018-06-02 06:26] [ALPM] upgraded ca-certificates-mozilla (3.36-1 -> 3.37.1-1)
+[2018-06-02 06:26] [ALPM] upgraded glib-networking (2.54.1-1 -> 2.56.1-1)
+[2018-06-02 06:26] [ALPM] upgraded libsoup (2.60.3-1 -> 2.62.2-1)
+[2018-06-02 06:26] [ALPM] installed rest (0.8.1-1)
+[2018-06-02 06:26] [ALPM] upgraded wayland-protocols (1.13-1 -> 1.14-1)
+[2018-06-02 06:26] [ALPM] upgraded libtool (2.4.6+40+g6ca5e224-5 -> 2.4.6+40+g6ca5e224-6)
+[2018-06-02 06:26] [ALPM] upgraded xkeyboard-config (2.23.1-2 -> 2.23.1-3)
+[2018-06-02 06:26] [ALPM] upgraded gtk3-classic (3.22.29-2 -> 3.22.30-4)
+[2018-06-02 06:26] [ALPM-SCRIPTLET] 
+[2018-06-02 06:26] [ALPM-SCRIPTLET] [1;1m[1;32m ==>[1;0m[1;1m For detailed information about gtk-classic
+[2018-06-02 06:26] [ALPM-SCRIPTLET]   -> Please consult /usr/share/gtk-3.0/README.md
+[2018-06-02 06:26] [ALPM-SCRIPTLET]   [1;0m
+[2018-06-02 06:26] [ALPM] upgraded libidn2 (2.0.4-2 -> 2.0.5-1)
+[2018-06-02 06:26] [ALPM] upgraded libpsl (0.20.1-2 -> 0.20.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libnghttp2 (1.30.0-1 -> 1.31.1-1)
+[2018-06-02 06:26] [ALPM] upgraded curl (7.59.0-2 -> 7.60.0-1)
+[2018-06-02 06:26] [ALPM] upgraded libsecret (0.18.5+14+g9980655-1 -> 0.18.6-1)
+[2018-06-02 06:26] [ALPM] upgraded pinentry (1.1.0-1 -> 1.1.0-3)
+[2018-06-02 06:26] [ALPM] upgraded gnupg (2.2.5-1 -> 2.2.7-1)
+[2018-06-02 06:26] [ALPM] upgraded gpgme (1.10.0-2 -> 1.11.1-1)
+[2018-06-02 06:26] [ALPM] installed libnsl (1.2.0-1)
+[2018-06-02 06:26] [ALPM] upgraded python (3.6.4-2 -> 3.6.5-3)
+[2018-06-02 06:26] [ALPM] upgraded pacman-mirrors (4.9.1-3 -> 4.10.1-3)
+[2018-06-02 06:26] [ALPM] upgraded pacman (5.0.2-2 -> 5.1.0-2)
+[2018-06-02 06:26] [ALPM] upgraded appstream-glib (0.7.4-1 -> 0.7.7-2)
+[2018-06-02 06:26] [ALPM] upgraded archlinux-appstream-data (20180318-1 -> 20180424-1)
+[2018-06-02 06:26] [ALPM] upgraded i3-default-artwork (20180109-1 -> 20180428-1)
+[2018-06-02 06:26] [ALPM] upgraded artwork-i3 (20180123-1 -> 20180516-1)
+[2018-06-02 06:26] [ALPM] upgraded babl (0.1.38-1 -> 0.1.50-1)
+[2018-06-02 06:26] [ALPM] upgraded binutils (2.29.1-3 -> 2.30-4)
+[2018-06-02 06:26] [ALPM] upgraded libical (3.0.3-1 -> 3.0.3-2)
+[2018-06-02 06:26] [ALPM] upgraded bluez (5.49-1 -> 5.49-4)
+[2018-06-02 06:26] [ALPM] upgraded bluez-libs (5.49-1 -> 5.49-4)
+[2018-06-02 06:26] [ALPM] upgraded python-cairo (1.16.3-1 -> 1.17.0-1)
+[2018-06-02 06:26] [ALPM] upgraded gobject-introspection-runtime (1.54.1-1 -> 1.56.1-1)
+[2018-06-02 06:26] [ALPM] upgraded pygobject-devel (3.26.1-1 -> 3.28.3-1)
+[2018-06-02 06:26] [ALPM] upgraded python-gobject (3.26.1-1 -> 3.28.3-1)
+[2018-06-02 06:26] [ALPM] upgraded blueman (2.0.5-1 -> 2.0.5-2)
+[2018-06-02 06:26] [ALPM] upgraded zstd (1.3.3-1 -> 1.3.4-1)
+[2018-06-02 06:26] [ALPM] upgraded btrfs-progs (4.15.1-1 -> 4.16.1-2)
+[2018-06-02 06:26] [ALPM] upgraded gsm (1.0.17-1 -> 1.0.18-1)
+[2018-06-02 06:26] [ALPM] upgraded libwebp (0.6.1-1 -> 1.0.0-1)
+[2018-06-02 06:26] [ALPM] installed libibus (1.5.18-1)
+[2018-06-02 06:26] [ALPM] upgraded sdl2 (2.0.8-1 -> 2.0.8-8)
+[2018-06-02 06:26] [ALPM] upgraded libx264 (2:152.20171224-1 -> 2:152.20171224-2)
+[2018-06-02 06:26] [ALPM] upgraded x265 (2.7-1 -> 2.8-1)
+[2018-06-02 06:26] [ALPM] upgraded ffmpeg (1:3.4.2-2 -> 1:4.0-3)
+[2018-06-02 06:26] [ALPM] upgraded chromaprint (1.4.3-1 -> 1.4.3-2)
+[2018-06-02 06:26] [ALPM] upgraded compton (0.1_beta2.5-10 -> 0.1_beta2.5-11)
+[2018-06-02 06:26] [ALPM] upgraded imlib2 (1.4.10-1 -> 1.5.1-1)
+[2018-06-02 06:26] [ALPM] upgraded xorg-font-util (1.3.1-1 -> 1.3.1-2)
+[2018-06-02 06:26] [ALPM] upgraded xorg-font-utils (7.6-4 -> 7.6-5)
+[2018-06-02 06:26] [ALPM] upgraded xorg-fonts-encodings (1.0.4-4 -> 1.0.4-5)
+[2018-06-02 06:26] [ALPM] upgraded conky-i3 (20180109-1 -> 20180507-1)
+[2018-06-02 06:26] [ALPM] upgraded cpupower (4.15-1 -> 4.16-1)
+[2018-06-02 06:26] [ALPM] upgraded crda (3.18-1 -> 4.14-1)
+[2018-06-02 06:26] [ALPM] upgraded nss (3.36-1 -> 3.37.1-1)
+[2018-06-02 06:26] [ALPM] upgraded poppler (0.61.1-1 -> 0.64.0-1)
+[2018-06-02 06:26] [ALPM] upgraded liblqr (0.4.2-1 -> 0.4.2-2)
+[2018-06-02 06:26] [ALPM] upgraded libmagick (7.0.7.27-2 -> 7.0.7.37-1)
+[2018-06-02 06:26] [ALPM] upgraded imagemagick (7.0.7.27-2 -> 7.0.7.37-1)
+[2018-06-02 06:26] [ALPM] upgraded liblouis (3.4.0-1 -> 3.5.0-1)
+[2018-06-02 06:26] [ALPM] upgraded cups-filters (1.20.1-2 -> 1.20.3-2)
+[2018-06-02 06:26] [ALPM] upgraded cups (2.2.6-4 -> 2.2.7-2)
+[2018-06-02 06:26] [ALPM] upgraded dhcpcd (7.0.1-1 -> 7.0.4-1)
+[2018-06-02 06:26] [ALPM] upgraded libxss (1.2.2-2 -> 1.2.2-3)
+[2018-06-02 06:26] [ALPM] upgraded dunst (1.3.1-1 -> 1.3.2-1)
+[2018-06-02 06:26] [ALPM] upgraded expac (8-1 -> 8-2)
+[2018-06-02 06:26] [ALPM] upgraded ffmpegthumbnailer (2.2.0-1 -> 2.2.0-2)
+[2018-06-02 06:26] [ALPM] upgraded file (5.32-1 -> 5.33-3)
+[2018-06-02 06:26] [ALPM] upgraded foomatic-db-engine (4:4.0.12-7 -> 4:4.0.13-1)
+[2018-06-02 06:26] [ALPM] upgraded fuse-common (3.2.1-1 -> 3.2.3-1)
+[2018-06-02 06:26] [ALPM] upgraded fzf (0.17.3-1 -> 0.17.3-2)
+[2018-06-02 06:26] [ALPM] upgraded gcc (7.3.1+20180312-1 -> 8.1.0-1)
+[2018-06-02 06:26] [ALPM] upgraded gcolor2 (0.4-7 -> 0.4-8)
+[2018-06-02 06:26] [ALPM] upgraded gconf (3.2.6-5 -> 3.2.6+11+g07808097-3)
+[2018-06-02 06:26] [ALPM] upgraded gcr (3.20.0+55+g470bf4c-1 -> 3.28.0-3)
+[2018-06-02 06:26] [ALPM] upgraded libxt (1.1.5-1 -> 1.1.5-2)
+[2018-06-02 06:26] [ALPM] upgraded ghostscript (9.22-7 -> 9.23-1)
+[2018-06-02 06:26] [ALPM] upgraded giblib (1.2.4-6 -> 1.2.4-7)
+[2018-06-02 06:26] [ALPM] upgraded libspiro (1:0.5.20150702-1 -> 1:0.5.20150702-2)
+[2018-06-02 06:26] [ALPM] installed gegl (0.4.2-1)
+[2018-06-02 06:26] [ALPM] installed libmypaint (1.3.0-5)
+[2018-06-02 06:26] [ALPM] upgraded libxmu (1.1.2-1 -> 1.1.2-2)
+[2018-06-02 06:26] [ALPM] installed mypaint-brushes (1.3.0-2)
+[2018-06-02 06:26] [ALPM] upgraded poppler-data (0.4.8-1 -> 0.4.9-1)
+[2018-06-02 06:26] [ALPM] upgraded ilmbase (2.2.1-1 -> 2.2.1-2)
+[2018-06-02 06:26] [ALPM] upgraded python2 (2.7.14-2 -> 2.7.15-1)
+[2018-06-02 06:26] [ALPM] upgraded python2-cairo (1.16.3-1 -> 1.17.0-1)
+[2018-06-02 06:26] [ALPM] upgraded gimp (2.8.22-1 -> 2.10.2-1)
+[2018-06-02 06:26] [ALPM] upgraded perl-error (0.17025-2 -> 0.17026-1)
+[2018-06-02 06:26] [ALPM] installed perl-timedate (2.30-4)
+[2018-06-02 06:26] [ALPM] installed perl-mailtools (2.20-1)
+[2018-06-02 06:26] [ALPM] upgraded git (2.16.2-2 -> 2.17.1-1)
+[2018-06-02 06:26] [ALPM] upgraded glibmm (2.54.1-1 -> 2.56.0-1)
+[2018-06-02 06:26] [ALPM] upgraded openssh (7.6p1-2 -> 7.7p1-1)
+[2018-06-02 06:26] [ALPM] upgraded gnome-keyring (1:3.27.4+8+gff229abc-1 -> 1:3.28.2-1)
+[2018-06-02 06:26] [ALPM] warning: /etc/default/grub installed as /etc/default/grub.pacnew
+[2018-06-02 06:26] [ALPM] upgraded grub (2.03.0-4 -> 2.03.0-7.1)
+[2018-06-02 06:26] [ALPM] upgraded gstreamer (1.12.4-1 -> 1.14.1-1)
+[2018-06-02 06:26] [ALPM] upgraded gst-plugins-base-libs (1.12.4-1 -> 1.14.1-1)
+[2018-06-02 06:26] [ALPM] upgraded gst-libav (1.12.4-1 -> 1.14.1-1)
+[2018-06-02 06:26] [ALPM] upgraded libgme (0.6.1-1 -> 0.6.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libsrtp (1:2.1.0-1 -> 1:2.2.0-1)
+[2018-06-02 06:26] [ALPM] upgraded openal (1.18.2-1 -> 1.18.2-2)
+[2018-06-02 06:26] [ALPM] upgraded vulkan-icd-loader (1.1.70.0-3 -> 1.1.73.0-1)
+[2018-06-02 06:26] [ALPM] upgraded neon (0.30.2-2 -> 0.30.2-3)
+[2018-06-02 06:26] [ALPM] installed libnice (0.1.14+70+gfb2f1f7-1)
+[2018-06-02 06:26] [ALPM] installed srt (1.3.0-2)
+[2018-06-02 06:26] [ALPM] upgraded libmp4v2 (2.0.0-4 -> 2.0.0-5)
+[2018-06-02 06:26] [ALPM] upgraded gst-plugins-bad (1.12.4-5 -> 1.14.1-2)
+[2018-06-02 06:26] [ALPM] upgraded gst-plugins-base (1.12.4-1 -> 1.14.1-1)
+[2018-06-02 06:26] [ALPM] upgraded mpg123 (1.25.8-1 -> 1.25.10-1)
+[2018-06-02 06:26] [ALPM] installed twolame (0.3.13-8)
+[2018-06-02 06:26] [ALPM] upgraded procps-ng (3.3.12-2.1 -> 3.3.14-1.2)
+[2018-06-02 06:26] [ALPM] upgraded gst-plugins-good (1.12.4-2 -> 1.14.1-1)
+[2018-06-02 06:26] [ALPM] upgraded libx264-all (2:152.20171224-1 -> 2:152.20171224-2)
+[2018-06-02 06:26] [ALPM] upgraded gst-plugins-ugly (1.12.4-3 -> 1.14.1-1)
+[2018-06-02 06:26] [ALPM] upgraded gtksourceview3 (3.24.6-1 -> 3.24.7-1)
+[2018-06-02 06:26] [ALPM] upgraded gutenprint (5.2.13-1 -> 5.2.14-1)
+[2018-06-02 06:26] [ALPM-SCRIPTLET] >>please run /usr/bin/cups-genppdupdate
+[2018-06-02 06:26] [ALPM-SCRIPTLET] >>and restart cups deamon
+[2018-06-02 06:26] [ALPM] upgraded libbytesize (1.1-1 -> 1.3-1)
+[2018-06-02 06:26] [ALPM] installed ndctl (60.3-1)
+[2018-06-02 06:26] [ALPM] upgraded volume_key (0.3.9-5 -> 0.3.10-1)
+[2018-06-02 06:26] [ALPM] upgraded xfsprogs (4.15.1-1 -> 4.16.1-1)
+[2018-06-02 06:26] [ALPM] upgraded libaio (0.3.110-1 -> 0.3.111-1)
+[2018-06-02 06:26] [ALPM] upgraded thin-provisioning-tools (0.7.5-1 -> 0.7.6-1)
+[2018-06-02 06:26] [ALPM] upgraded libblockdev (2.16-1 -> 2.17-3)
+[2018-06-02 06:26] [ALPM] upgraded udisks2 (2.7.6-1 -> 2.7.6-1.1)
+[2018-06-02 06:26] [ALPM] upgraded gvfs (1.34.2.1-1 -> 1.36.2-1)
+[2018-06-02 06:26] [ALPM] upgraded gvfs-afc (1.34.2.1-1 -> 1.36.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libgphoto2 (2.5.16-1 -> 2.5.18-1)
+[2018-06-02 06:26] [ALPM] upgraded gvfs-gphoto2 (1.34.2.1-1 -> 1.36.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libmtp (1.1.14-1 -> 1.1.15-1)
+[2018-06-02 06:26] [ALPM] upgraded gvfs-mtp (1.34.2.1-1 -> 1.36.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libwbclient (4.7.6-1 -> 4.8.2-1)
+[2018-06-02 06:26] [ALPM] upgraded talloc (2.1.11-1 -> 2.1.13-1)
+[2018-06-02 06:26] [ALPM] upgraded ldb (1.3.1-1 -> 1.3.3-1)
+[2018-06-02 06:26] [ALPM] installed gamin (0.1.10-9)
+[2018-06-02 06:26] [ALPM] upgraded smbclient (4.7.6-1 -> 4.8.2-1)
+[2018-06-02 06:26] [ALPM] upgraded gvfs-smb (1.34.2.1-1 -> 1.36.2-1)
+[2018-06-02 06:26] [ALPM] upgraded harfbuzz-icu (1.7.6-1 -> 1.7.6-2)
+[2018-06-02 06:26] [ALPM] upgraded hdparm (9.54-1 -> 9.56-1)
+[2018-06-02 06:26] [ALPM] upgraded hexchat (2.14.1-1 -> 2.14.1-2)
+[2018-06-02 06:26] [ALPM] upgraded net-snmp (5.7.3-7 -> 5.7.3-8)
+[2018-06-02 06:26] [ALPM] upgraded hplip (3.18.3-2 -> 3.18.4-2)
+[2018-06-02 06:26] [ALPM] upgraded htop (2.1.0-2 -> 2.2.0-2)
+[2018-06-02 06:26] [ALPM] upgraded hwinfo (21.52-1 -> 21.53-1)
+[2018-06-02 06:26] [ALPM] upgraded i3-scripts (20180114-1 -> 20180519-1)
+[2018-06-02 06:26] [ALPM] upgraded xcb-util-xrm (1.2-2 -> 1.3-1)
+[2018-06-02 06:26] [ALPM] upgraded i3exit (20170616-1 -> 20180529-1)
+[2018-06-02 06:26] [ALPM] upgraded i3status-manjaro (2.11-3 -> 2.12-1)
+[2018-06-02 06:26] [ALPM] upgraded intel-ucode (20180312-0 -> 20180425-1)
+[2018-06-02 06:26] [ALPM] upgraded inxi (2.9.08-1 -> 3.0.10-2)
+[2018-06-02 06:26] [ALPM] upgraded iproute2 (4.15.0-1 -> 4.16.0-1)
+[2018-06-02 06:26] [ALPM] upgraded xdg-utils (1.1.2-2 -> 1.1.3-1)
+[2018-06-02 06:26] [ALPM] upgraded tslib (1.15-1 -> 1.16-1)
+[2018-06-02 06:26] [ALPM] upgraded libwacom (0.28-2 -> 0.29-1)
+[2018-06-02 06:26] [ALPM] upgraded libinput (1.10.3-0 -> 1.10.7-1)
+[2018-06-02 06:26] [ALPM] upgraded qt5-base (5.10.1-6 -> 5.11.0-1)
+[2018-06-02 06:26] [ALPM] upgraded kcoreaddons (5.44.0-1 -> 5.46.0-1)
+[2018-06-02 06:26] [ALPM] upgraded kauth (5.44.0-1 -> 5.46.0-1)
+[2018-06-02 06:26] [ALPM] upgraded kitemmodels (5.44.0-1 -> 5.46.0-1)
+[2018-06-02 06:26] [ALPM] upgraded qt5-svg (5.10.1-1 -> 5.11.0-1)
+[2018-06-02 06:26] [ALPM] upgraded qt5-x11extras (5.10.1-1 -> 5.11.0-1)
+[2018-06-02 06:26] [ALPM] upgraded kvantum-qt5 (0.10.5-1 -> 0.10.6-1)
+[2018-06-02 06:26] [ALPM] upgraded kvantum-manjaro (0.10.5-3 -> 0.10.6-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-glibc (2.26-11 -> 2.27-3)
+[2018-06-02 06:26] [ALPM] upgraded lib32-alsa-lib (1.1.5-1 -> 1.1.6-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-alsa-plugins (1.1.5-1 -> 1.1.6-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-gcc-libs (7.3.1+20180312-1 -> 8.1.0-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-icu (60.2-1 -> 61.1-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libdrm (2.4.91-3 -> 2.4.92-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libxdmcp (1.1.2-1 -> 1.1.2-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libxext (1.3.3-1 -> 1.3.3-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libxxf86vm (1.1.4-1 -> 1.1.4-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libxml2 (2.9.8-1 -> 2.9.8-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-wayland (1.14.0-1 -> 1.15.0-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-mesa (17.3.7-1 -> 18.0.4-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libva-vdpau-driver (0.7.4-5 -> 0.7.4-6)
+[2018-06-02 06:26] [ALPM] upgraded lib32-util-linux (2.31.1-1 -> 2.32-1)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libxt (1.1.5-1 -> 1.1.5-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-libxmu (1.1.2-1 -> 1.1.2-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-mesa-vdpau (17.3.7-1 -> 18.0.4-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-vulkan-intel (17.3.7-1 -> 18.0.4-2)
+[2018-06-02 06:26] [ALPM] upgraded lib32-vulkan-radeon (17.3.7-1 -> 18.0.4-2)
+[2018-06-02 06:26] [ALPM] upgraded libatomic_ops (7.6.2-1 -> 7.6.4-1)
+[2018-06-02 06:26] [ALPM] upgraded libdmx (1.1.3-1 -> 1.1.4-1)
+[2018-06-02 06:26] [ALPM] upgraded libdvdcss (1.4.1-1 -> 1.4.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libebml (1.3.5-1 -> 1.3.6-1)
+[2018-06-02 06:26] [ALPM] upgraded libfm-extra (1.2.5-2 -> 1.3.0.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libfm (1.2.5-2 -> 1.3.0.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libfm-gtk2 (1.2.5-2 -> 1.3.0.2-1)
+[2018-06-02 06:26] [ALPM] upgraded libgtop (2.38.0+1+g487e584a-2 -> 2.38.0+13+gcab8791f-1)
+[2018-06-02 06:26] [ALPM] upgraded libmatroska (1.4.8-1 -> 1.4.9-1)
+[2018-06-02 06:26] [ALPM] upgraded libmm-glib (1.8rc1+6+g0f377f94-1 -> 1.8rc2+1+g7e949283-1)
+[2018-06-02 06:26] [ALPM] upgraded libnetfilter_conntrack (1.0.6-1 -> 1.0.7-1)
+[2018-06-02 06:26] [ALPM] upgraded libnm (1.10.6-2 -> 1.10.8-1)
+[2018-06-02 06:26] [ALPM] upgraded libnm-glib (1.10.6-2 -> 1.10.8-1)
+[2018-06-02 06:26] [ALPM] upgraded libpgm (5.2.122-2 -> 5.2.122-3)
+[2018-06-02 06:26] [ALPM] upgraded libtiger (0.3.4-4 -> 0.3.4-5)
+[2018-06-02 06:26] [ALPM] upgraded libva-mesa-driver (17.3.7-1 -> 18.0.4-1)
+[2018-06-02 06:26] [ALPM] upgraded libxkbfile (1.0.9-1 -> 1.0.9-2)
+[2018-06-02 06:26] [ALPM] upgraded libxxf86dga (1.1.4-1 -> 1.1.4-2)
+[2018-06-02 06:26] [ALPM] upgraded libzip (1.4.0-1 -> 1.5.1-1)
+[2018-06-02 06:26] [ALPM] upgraded lightdm (1:1.24.1-3 -> 1:1.26.0-1)
+[2018-06-02 06:26] [ALPM] warning: /etc/lightdm/slick-greeter.conf installed as /etc/lightdm/slick-greeter.conf.pacnew
+[2018-06-02 06:26] [ALPM] upgraded lightdm-slick-greeter (1.1.4-1 -> 1.2.0-1)
+[2018-06-02 06:26] [ALPM] upgraded python-psutil (5.4.3-1 -> 5.4.5-1)
+[2018-06-02 06:26] [ALPM] upgraded python-xapp (1.0.1-2 -> 1.2.0-1)
+[2018-06-02 06:26] [ALPM] upgraded lightdm-settings (1.1.4-3 -> 1.2.0-1)
+[2018-06-02 06:26] [ALPM-SCRIPTLET] 
+[2018-06-02 06:26] [ALPM-SCRIPTLET] [m(B[1m[38;5;4m==>[m(B[1m[38;5;3m NOTE:[m(B[1m We have enabled autologin for all users.[m(B
+[2018-06-02 06:26] [ALPM-SCRIPTLET] [m(B[1m[38;5;4m==>[m(B[1m[38;5;3m NOTE:[m(B[1m Reboot your system the first time, so changes will take affect.[m(B
+[2018-06-02 06:26] [ALPM-SCRIPTLET] 
+[2018-06-02 06:26] [ALPM] upgraded links (2.14-3 -> 2.16-1)
+[2018-06-02 06:27] [ALPM] upgraded linux-firmware (20180314.4c0bf11-1 -> 20180525.7518922-1)
+[2018-06-02 06:27] [ALPM] upgraded mkinitcpio-busybox (1.28.1-1 -> 1.28.3-1)
+[2018-06-02 06:27] [ALPM] upgraded linux414 (4.14.30-1 -> 4.14.47-1)
+[2018-06-02 06:27] [ALPM] upgraded logrotate (3.13.0-1 -> 3.14.0-1)
+[2018-06-02 06:27] [ALPM] upgraded man-db (2.8.2-1 -> 2.8.3-1)
+[2018-06-02 06:27] [ALPM] upgraded man-pages (4.15-1 -> 4.16-1)
+[2018-06-02 06:27] [ALPM] upgraded manjaro-browser-settings (20180316-2 -> 20180523-1)
+[2018-06-02 06:27] [ALPM] upgraded manjaro-hello (0.5.11-1 -> 0.5.11-2)
+[2018-06-02 06:27] [ALPM] upgraded wget (1.19.4-3 -> 1.19.5-1)
+[2018-06-02 06:27] [ALPM] upgraded nerd-fonts-terminus (1.1.0-1 -> 2.0.0-2)
+[2018-06-02 06:27] [ALPM-SCRIPTLET] Updating font cache... done
+[2018-06-02 06:27] [ALPM] upgraded noto-fonts (20171025-2 -> 20180322-1)
+[2018-06-02 06:27] [ALPM] upgraded rxvt-unicode-terminfo (9.22-5 -> 9.22-6)
+[2018-06-02 06:27] [ALPM] upgraded rxvt-unicode (9.22-5 -> 9.22-6)
+[2018-06-02 06:27] [ALPM] upgraded xorg-fonts-alias (1.0.3-1 -> 1.0.3-2)
+[2018-06-02 06:27] [ALPM] upgraded manjaro-i3-settings (20180331-2 -> 20180507-1)
+[2018-06-02 06:27] [ALPM] upgraded manjaro-release (17.1.7-1 -> 17.1.10-1)
+[2018-06-02 06:27] [ALPM] upgraded manjaro-settings-manager (0.5.4-10 -> 0.5.4-14)
+[2018-06-02 06:27] [ALPM] upgraded manjaro-settings-manager-notifier (0.5.4-10 -> 0.5.4-14)
+[2018-06-02 06:27] [ALPM] upgraded php (7.2.3-1 -> 7.2.6-1)
+[2018-06-02 06:27] [ALPM] installed brotli (1.0.4-1)
+[2018-06-02 06:27] [ALPM] installed woff2 (1.0.2-1)
+[2018-06-02 06:27] [ALPM] upgraded webkit2gtk (2.18.6-1 -> 2.20.2-1)
+[2018-06-02 06:27] [ALPM] upgraded zenity (3.26.0-1 -> 3.28.1-1)
+[2018-06-02 06:27] [ALPM] upgraded markdown_previewer (0-1 -> 0.r6.64ad4d7-1)
+[2018-06-02 06:27] [ALPM] upgraded mesa-vdpau (17.3.7-1 -> 18.0.4-1)
+[2018-06-02 06:27] [ALPM] upgraded mhwd-nvidia (1:390.42-1 -> 1:396.24-1)
+[2018-06-02 06:27] [ALPM] installed mhwd-nvidia-390xx (390.59-1)
+[2018-06-02 06:27] [ALPM] upgraded mhwd-db (0.6.2-4 -> 0.6.3-1)
+[2018-06-02 06:27] [ALPM-SCRIPTLET] [1;1m[1;32m==>[1;0m[1;1m Updating Config: '/var/lib/mhwd/local/pci/video-linux'[1;0m
+[2018-06-02 06:27] [ALPM] upgraded mhwd (0.6.2-5 -> 0.6.3-1)
+[2018-06-02 06:27] [ALPM] upgraded moc (1:2.5.2-1 -> 1:2.5.2-2)
+[2018-06-02 06:27] [ALPM] upgraded modemmanager (1.8rc1+6+g0f377f94-1 -> 1.8rc2+1+g7e949283-1)
+[2018-06-02 06:27] [ALPM] upgraded nano (2.9.4-1 -> 2.9.7-1)
+[2018-06-02 06:27] [ALPM] upgraded nm-connection-editor (1.8.11dev+12+ga37483c1-1 -> 1.8.12-2)
+[2018-06-02 06:27] [ALPM] upgraded openssl-1.0 (1.0.2.n-1 -> 1.0.2.o-1)
+[2018-06-02 06:27] [ALPM] upgraded networkmanager (1.10.6-2 -> 1.10.8-1)
+[2018-06-02 06:27] [ALPM] upgraded network-manager-applet (1.8.11dev+12+ga37483c1-1 -> 1.8.12-2)
+[2018-06-02 06:27] [ALPM] upgraded openvpn (2.4.5-1 -> 2.4.6-1)
+[2018-06-02 06:27] [ALPM] upgraded networkmanager-openvpn (1.8.1dev+10+ge4d8cda-2 -> 1.8.4-1)
+[2018-06-02 06:27] [ALPM] upgraded networkmanager-pptp (1.2.4-3 -> 1.2.6-1)
+[2018-06-02 06:27] [ALPM] upgraded ntp (4.2.8.p11-1 -> 4.2.8.p11-2)
+[2018-06-02 06:27] [ALPM] upgraded package-query (1.9-1 -> 1.9-2)
+[2018-06-02 06:27] [ALPM] upgraded sudo (1.8.22-1 -> 1.8.23-2)
+[2018-06-02 06:27] [ALPM] upgraded pacui (1.9.2-1 -> 1.10.2-1)
+[2018-06-02 06:27] [ALPM] upgraded palemoon-bin (27.8.1-1 -> 27.9.2-1)
+[2018-06-02 06:27] [ALPM] upgraded vte-common (0.51.3-0.1 -> 0.52.2-1)
+[2018-06-02 06:27] [ALPM] upgraded vte3 (0.51.3-0.1 -> 0.52.2-1)
+[2018-06-02 06:27] [ALPM] upgraded pamac (6.2.6-1 -> 6.3.92-1)
+[2018-06-02 06:27] [ALPM] upgraded pcmanfm (1.2.5-2 -> 1.3.0-1)
+[2018-06-02 06:27] [ALPM] upgraded pcsclite (1.8.23-1 -> 1.8.23-3)
+[2018-06-02 06:27] [ALPM] upgraded perl-file-basedir (0.07-3 -> 0.08-1)
+[2018-06-02 06:27] [ALPM] upgraded perl-uri (1.73-1 -> 1.74-1)
+[2018-06-02 06:27] [ALPM] installed pkgconf (1.4.2-2)
+[2018-06-02 06:27] [ALPM] upgraded poppler-glib (0.61.1-1 -> 0.64.0-1)
+[2018-06-02 06:27] [ALPM] upgraded pyqt5-common (5.10.1-1 -> 5.10.1-3)
+[2018-06-02 06:27] [ALPM] upgraded python-packaging (16.8-2 -> 17.1-1)
+[2018-06-02 06:27] [ALPM] upgraded python-pyqt5 (5.10.1-1 -> 5.10.1-3)
+[2018-06-02 06:27] [ALPM] upgraded python-setuptools (1:39.0.1-1 -> 1:39.2.0-1)
+[2018-06-02 06:27] [ALPM] upgraded qt5-styleplugins (5.0.0.20170311-5 -> 5.0.0.20170311-6)
+[2018-06-02 06:27] [ALPM] upgraded qt5ct (0.35-1 -> 0.35-2)
+[2018-06-02 06:27] [ALPM] upgraded s-nail (14.9.9-1 -> 14.9.10-1)
+[2018-06-02 06:27] [ALPM] upgraded xorg-xdpyinfo (1.3.2-1 -> 1.3.2-2)
+[2018-06-02 06:27] [ALPM] upgraded screenfetch (3.8.0.r45.ga0bffe0-1 -> 3.8.0.r107.g522c9c0-1)
+[2018-06-02 06:27] [ALPM] upgraded sed (4.4-1 -> 4.5-1)
+[2018-06-02 06:27] [ALPM] upgraded spectre-meltdown-checker (0.35-1 -> 0.37-1)
+[2018-06-02 06:27] [ALPM] upgraded speedtest-cli (2.0.0-1 -> 2.0.2-1)
+[2018-06-02 06:27] [ALPM] installed libutf8proc (1.3.1_3-2)
+[2018-06-02 06:27] [ALPM] upgraded subversion (1.9.7-4 -> 1.10.0-2)
+[2018-06-02 06:27] [ALPM] upgraded syslog-ng (3.14.1-1 -> 3.15.1-1)
+[2018-06-02 06:27] [ALPM] upgraded systemd-sysvcompat (238.51-1.1 -> 238.76-1)
+[2018-06-02 06:27] [ALPM] upgraded transmission-gtk (2.93-1 -> 2.94-1)
+[2018-06-02 06:27] [ALPM] upgraded ttf-indic-otf (0.2-8 -> 0.2-9)
+[2018-06-02 06:27] [ALPM] upgraded vertex-maia-themes (20171114-1 -> 20180519-4)
+[2018-06-02 06:27] [ALPM-SCRIPTLET] 
+[2018-06-02 06:27] [ALPM-SCRIPTLET] [1;1m[1;32m==>[1;0m[1;1m vertex-maia-themes:
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> For seamless integration of Firefox and Palemoon browsers
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> please copy the 'chrome' folder of the desired theme to your browser profile
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> or create a symlink.[1;0m
+[2018-06-02 06:27] [ALPM-SCRIPTLET] [1;1m[1;32m==>[1;0m[1;1m For example:
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> 'ln -s /usr/share/themes/Palemoon/Vertex-Maia-Dark/chrome/ ~/.moonchild\ productions/pale\ moon/<xyz123>.default/chrome'
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   [1;0m
+[2018-06-02 06:27] [ALPM] upgraded vlc-nightly (3.0.2v20180321-1 -> 3.0.3v20180520-1)
+[2018-06-02 06:27] [ALPM] upgraded volumeicon (0.5.1-1 -> 0.5.1-3)
+[2018-06-02 06:27] [ALPM] upgraded vulkan-intel (17.3.7-1 -> 18.0.4-1)
+[2018-06-02 06:27] [ALPM] upgraded vulkan-radeon (17.3.7-1 -> 18.0.4-1)
+[2018-06-02 06:27] [ALPM] upgraded xautolock (2.2-4 -> 2.2-5)
+[2018-06-02 06:27] [ALPM] upgraded xf86-input-libinput (0.27.0-2 -> 0.27.1-1)
+[2018-06-02 06:27] [ALPM] upgraded xf86-video-intel (1:2.99.917+812+g75795523-1 -> 1:2.99.917+829+gd7dfab62-1)
+[2018-06-02 06:27] [ALPM] upgraded xorg-luit (1.1.1-2 -> 1.1.1-3)
+[2018-06-02 06:27] [ALPM] upgraded xorg-setxkbmap (1.3.1-1 -> 1.3.1-2)
+[2018-06-02 06:27] [ALPM] upgraded xorg-server-common (1.19.6+13+gd0d1a694f-1 -> 1.19.6+24+g56547b196-1)
+[2018-06-02 06:27] [ALPM] upgraded xorg-server (1.19.6+13+gd0d1a694f-1 -> 1.19.6+24+g56547b196-1)
+[2018-06-02 06:27] [ALPM] upgraded xorg-xhost (1.0.7-1 -> 1.0.7-2)
+[2018-06-02 06:27] [ALPM] upgraded xorg-xinput (1.6.2-1 -> 1.6.2-2)
+[2018-06-02 06:27] [ALPM] upgraded xorg-xmodmap (1.0.9-1 -> 1.0.9-2)
+[2018-06-02 06:27] [ALPM] upgraded xterm (331-1 -> 333-1)
+[2018-06-02 06:27] [ALPM] upgraded yaourt (1.9-1 -> 1.9-2)
+[2018-06-02 06:27] [ALPM] upgraded zsh (5.4.2-2 -> 5.5.1-1)
+[2018-06-02 06:27] [ALPM] transaction completed
+[2018-06-02 06:27] [ALPM] running '60-linux414.hook'...
+[2018-06-02 06:27] [ALPM] running '90-linux414.hook'...
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux414.preset: 'default'
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-4.14-x86_64 -c /etc/mkinitcpio.conf -g /boot/initramfs-4.14-x86_64.img
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Starting build: 4.14.47-1-MANJARO
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [autodetect]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [keymap]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [resume]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-4.14-x86_64.img
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Image generation successful
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Building image from preset: /etc/mkinitcpio.d/linux414.preset: 'fallback'
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> -k /boot/vmlinuz-4.14-x86_64 -c /etc/mkinitcpio.conf -g /boot/initramfs-4.14-x86_64-fallback.img -S autodetect
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Starting build: 4.14.47-1-MANJARO
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [base]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [udev]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [modconf]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [block]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [keyboard]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [keymap]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [resume]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [filesystems]
+[2018-06-02 06:27] [ALPM-SCRIPTLET]   -> Running build hook: [fsck]
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Generating module dependencies
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Creating gzip-compressed initcpio image: /boot/initramfs-4.14-x86_64-fallback.img
+[2018-06-02 06:27] [ALPM-SCRIPTLET] ==> Image generation successful
+[2018-06-02 06:27] [ALPM] running '99-grub.hook'...
+[2018-06-02 06:27] [ALPM-SCRIPTLET] Generating grub configuration file ...
+[2018-06-02 06:27] [ALPM-SCRIPTLET] Found background: /usr/share/grub/background.png
+[2018-06-02 06:27] [ALPM-SCRIPTLET] Found linux image: /boot/vmlinuz-4.14-x86_64
+[2018-06-02 06:27] [ALPM-SCRIPTLET] Found initrd image: /boot/intel-ucode.img /boot/initramfs-4.14-x86_64.img
+[2018-06-02 06:27] [ALPM-SCRIPTLET] Found initrd fallback image: /boot/initramfs-4.14-x86_64-fallback.img
+[2018-06-02 06:27] [ALPM-SCRIPTLET] Found memtest86+ image: /boot/memtest86+/memtest.bin
+[2018-06-02 06:27] [ALPM-SCRIPTLET] done
+[2018-06-02 06:27] [ALPM] running 'detect-old-perl-modules.hook'...
+[2018-06-02 06:27] [ALPM] running 'fontconfig.hook'...
+[2018-06-02 06:27] [ALPM] running 'gdk-pixbuf-query-loaders.hook'...
+[2018-06-02 06:27] [ALPM] running 'gio-querymodules.hook'...
+[2018-06-02 06:27] [ALPM] running 'glib-compile-schemas.hook'...
+[2018-06-02 06:27] [ALPM] running 'gtk-query-immodules-3.0.hook'...
+[2018-06-02 06:27] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 06:27] [ALPM] running 'gvfsd.hook'...
+[2018-06-02 06:27] [ALPM] running 'pacman-mirrors-upgrade.hook'...
+[2018-06-02 06:27] [ALPM-SCRIPTLET] .: [1;37mINFO[1;m Downloading mirrors from repo.manjaro.org
+[2018-06-02 06:27] [ALPM-SCRIPTLET] hint: use `pacman-mirrors` to generate and update your pacman mirrorlist.
+[2018-06-02 06:27] [ALPM] running 'systemd-catalog.hook'...
+[2018-06-02 06:27] [ALPM] running 'systemd-daemon-reload.hook'...
+[2018-06-02 06:28] [ALPM] running 'systemd-hwdb.hook'...
+[2018-06-02 06:28] [ALPM] running 'systemd-sysctl.hook'...
+[2018-06-02 06:28] [ALPM] running 'systemd-sysusers.hook'...
+[2018-06-02 06:28] [ALPM] running 'systemd-tmpfiles.hook'...
+[2018-06-02 06:28] [ALPM] running 'systemd-udev-reload.hook'...
+[2018-06-02 06:28] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:28] [ALPM] running 'texinfo-install.hook'...
+[2018-06-02 06:28] [ALPM] running 'update-ca-trust.hook'...
+[2018-06-02 06:28] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 06:28] [ALPM] running 'update-mime-database.hook'...
+[2018-06-02 06:28] [ALPM] running 'update-vlc-plugin-cache.hook'...
+[2018-06-02 06:28] [ALPM] running 'xorg-mkfontdir.hook'...
+[2018-06-02 06:35] [PACMAN] Running 'pacman -S yaourt'
+[2018-06-02 06:35] [ALPM] transaction started
+[2018-06-02 06:35] [ALPM] reinstalled yaourt (1.9-2)
+[2018-06-02 06:35] [ALPM] transaction completed
+[2018-06-02 06:35] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:36] [PACMAN] Running 'pacman -S base-devel yaourt'
+[2018-06-02 06:47] [PACMAN] Running 'pacman -Sy'
+[2018-06-02 06:47] [PACMAN] synchronizing package lists
+[2018-06-02 06:47] [PACMAN] Running 'pacman -S yaourt'
+[2018-06-02 06:47] [ALPM] transaction started
+[2018-06-02 06:47] [ALPM] reinstalled yaourt (1.9-2)
+[2018-06-02 06:47] [ALPM] transaction completed
+[2018-06-02 06:47] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:49] [PACMAN] Running 'pacman --color auto -S extra/conky'
+[2018-06-02 06:49] [ALPM] transaction started
+[2018-06-02 06:49] [ALPM] reinstalled conky (1.10.8-2)
+[2018-06-02 06:49] [ALPM] transaction completed
+[2018-06-02 06:49] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:49] [PACMAN] Running 'pacman --color auto -S extra/conky'
+[2018-06-02 06:49] [PACMAN] Running 'pacman --color auto -S g++'
+[2018-06-02 06:49] [PACMAN] Running 'pacman --color auto -S core/gcc'
+[2018-06-02 06:49] [ALPM] transaction started
+[2018-06-02 06:49] [ALPM] reinstalled gcc (8.1.0-1)
+[2018-06-02 06:49] [ALPM] transaction completed
+[2018-06-02 06:49] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:49] [ALPM] running 'texinfo-install.hook'...
+[2018-06-02 06:49] [PACMAN] Running 'pacman --color auto -S community/redshift'
+[2018-06-02 06:49] [ALPM] transaction started
+[2018-06-02 06:49] [ALPM] reinstalled redshift (1.12-1)
+[2018-06-02 06:49] [ALPM] transaction completed
+[2018-06-02 06:49] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 06:49] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:49] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 06:50] [PACMAN] Running 'pacman --color auto -S extra/vim'
+[2018-06-02 06:50] [ALPM] transaction started
+[2018-06-02 06:50] [ALPM] reinstalled vim (8.1.0022-1)
+[2018-06-02 06:50] [ALPM] transaction completed
+[2018-06-02 06:50] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 06:50] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:50] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 06:50] [PACMAN] Running 'pacman --color auto -S extra/dmidecode'
+[2018-06-02 06:50] [ALPM] transaction started
+[2018-06-02 06:50] [ALPM] reinstalled dmidecode (3.1-2)
+[2018-06-02 06:50] [ALPM] transaction completed
+[2018-06-02 06:50] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:50] [PACMAN] Running 'pacman --color auto -S extra/evince'
+[2018-06-02 06:50] [ALPM] transaction started
+[2018-06-02 06:50] [ALPM] reinstalled evince (3.28.2-1)
+[2018-06-02 06:50] [ALPM] transaction completed
+[2018-06-02 06:50] [ALPM] running 'glib-compile-schemas.hook'...
+[2018-06-02 06:50] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 06:50] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:50] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 06:50] [PACMAN] Running 'pacman --color auto -S extra/git'
+[2018-06-02 06:50] [ALPM] transaction started
+[2018-06-02 06:50] [ALPM] reinstalled git (2.17.1-1)
+[2018-06-02 06:50] [ALPM] transaction completed
+[2018-06-02 06:50] [ALPM] running 'systemd-daemon-reload.hook'...
+[2018-06-02 06:50] [ALPM] running 'systemd-sysusers.hook'...
+[2018-06-02 06:50] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:50] [PACMAN] Running 'pacman --color auto -S extra/nautilus'
+[2018-06-02 06:50] [ALPM] transaction started
+[2018-06-02 06:50] [ALPM] reinstalled nautilus (3.28.1-1.1)
+[2018-06-02 06:50] [ALPM] transaction completed
+[2018-06-02 06:50] [ALPM] running 'glib-compile-schemas.hook'...
+[2018-06-02 06:50] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 06:50] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:50] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 06:50] [PACMAN] Running 'pacman --color auto -S community/ranger'
+[2018-06-02 06:50] [ALPM] transaction started
+[2018-06-02 06:50] [ALPM] reinstalled ranger (1.9.1-1)
+[2018-06-02 06:50] [ALPM] transaction completed
+[2018-06-02 06:50] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 06:50] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 11:56] [PACMAN] Running 'pacman --color auto -S extra/vim'
+[2018-06-02 11:56] [ALPM] transaction started
+[2018-06-02 11:56] [ALPM] reinstalled vim (8.1.0022-1)
+[2018-06-02 11:56] [ALPM] transaction completed
+[2018-06-02 11:56] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-02 11:56] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 11:56] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-02 12:03] [PACMAN] Running 'pacman --color auto -S core/grep community/ack community/pdfgrep community/ext3grep community/tre community/ripgrep community/ngrep community/cgrep'
+[2018-06-02 12:04] [ALPM] transaction started
+[2018-06-02 12:04] [ALPM] reinstalled grep (3.1-1)
+[2018-06-02 12:04] [ALPM] installed perl-file-next (1.16-3)
+[2018-06-02 12:04] [ALPM] installed ack (2.22-1)
+[2018-06-02 12:04] [ALPM] installed pdfgrep (2.0.1-1)
+[2018-06-02 12:04] [ALPM] installed ext3grep (0.10.2-4)
+[2018-06-02 12:04] [ALPM] installed tre (0.8.0-4)
+[2018-06-02 12:04] [ALPM] installed ripgrep (0.8.1-1)
+[2018-06-02 12:04] [ALPM] installed ngrep (1.47-1)
+[2018-06-02 12:04] [ALPM] installed ghc-libs (8.4.2-1)
+[2018-06-02 12:04] [ALPM] installed haskell-hashable (1.2.7.0-2)
+[2018-06-02 12:04] [ALPM] installed haskell-integer-logarithms (1.0.2.1-2)
+[2018-06-02 12:04] [ALPM] installed haskell-primitive (0.6.3.0-2)
+[2018-06-02 12:04] [ALPM] installed haskell-scientific (0.3.6.2-2)
+[2018-06-02 12:04] [ALPM] installed haskell-attoparsec (0.13.2.2-18)
+[2018-06-02 12:04] [ALPM] installed haskell-base-compat (0.10.1-1)
+[2018-06-02 12:04] [ALPM] installed haskell-dlist (0.8.0.4-2)
+[2018-06-02 12:04] [ALPM] installed haskell-transformers-compat (0.6.2-1)
+[2018-06-02 12:04] [ALPM] installed haskell-tagged (0.8.5-7)
+[2018-06-02 12:04] [ALPM] installed haskell-th-abstraction (0.2.6.0-4)
+[2018-06-02 12:04] [ALPM] installed haskell-time-locale-compat (0.1.1.4-2)
+[2018-06-02 12:04] [ALPM] installed haskell-unordered-containers (0.2.9.0-6)
+[2018-06-02 12:04] [ALPM] installed haskell-random (1.1-11)
+[2018-06-02 12:04] [ALPM] installed haskell-uuid-types (1.0.3-14)
+[2018-06-02 12:04] [ALPM] installed haskell-vector (0.12.0.1-7)
+[2018-06-02 12:04] [ALPM] installed haskell-aeson (1.3.1.1-8)
+[2018-06-02 12:04] [ALPM] installed haskell-colour (2.3.4-4)
+[2018-06-02 12:04] [ALPM] installed haskell-ansi-terminal (0.8.0.4-1)
+[2018-06-02 12:04] [ALPM] installed haskell-async (2.2.1-1)
+[2018-06-02 12:04] [ALPM] installed haskell-cmdargs (0.10.20-2)
+[2018-06-02 12:04] [ALPM] installed haskell-base-orphans (0.7-3)
+[2018-06-02 12:04] [ALPM] installed haskell-statevar (1.1.1.0-2)
+[2018-06-02 12:04] [ALPM] installed haskell-contravariant (1.4.1-5)
+[2018-06-02 12:04] [ALPM] installed haskell-distributive (0.5.3-9)
+[2018-06-02 12:04] [ALPM] installed haskell-comonad (5.0.3-8)
+[2018-06-02 12:04] [ALPM] installed haskell-bifunctors (5.5.2-17)
+[2018-06-02 12:04] [ALPM] installed haskell-profunctors (5.2.2-20)
+[2018-06-02 12:04] [ALPM] installed haskell-semigroupoids (5.2.2-25)
+[2018-06-02 12:04] [ALPM] installed haskell-either (5-52)
+[2018-06-02 12:04] [ALPM] installed haskell-exceptions (0.10.0-1)
+[2018-06-02 12:04] [ALPM] installed haskell-regex-base (0.93.2-32)
+[2018-06-02 12:04] [ALPM] installed haskell-regex-pcre (0.94.4-8)
+[2018-06-02 12:04] [ALPM] installed haskell-regex-posix (0.95.2-21)
+[2018-06-02 12:04] [ALPM] installed haskell-safe (0.3.17-1)
+[2018-06-02 12:04] [ALPM] installed haskell-split (0.2.3.3-2)
+[2018-06-02 12:04] [ALPM] installed haskell-stringsearch (0.3.6.6-7)
+[2018-06-02 12:04] [ALPM] installed haskell-old-locale (1.0.0.7-13)
+[2018-06-02 12:04] [ALPM] installed haskell-old-time (1.1.0.3-13)
+[2018-06-02 12:04] [ALPM] installed haskell-unix-compat (0.5.0.1-2)
+[2018-06-02 12:04] [ALPM] installed haskell-unicode-show (0.1.0.2-6)
+[2018-06-02 12:04] [ALPM] installed haskell-utf8-string (1.0.1.1-7)
+[2018-06-02 12:04] [ALPM] installed haskell-vector-th-unbox (0.2.1.6-9)
+[2018-06-02 12:04] [ALPM] installed haskell-math-functions (0.2.1.0-8)
+[2018-06-02 12:04] [ALPM] installed haskell-mwc-random (0.13.6.0-7)
+[2018-06-02 12:04] [ALPM] installed haskell-vector-algorithms (0.7.0.1-13)
+[2018-06-02 12:04] [ALPM] installed haskell-mono-traversable (1.0.8.1-26)
+[2018-06-02 12:04] [ALPM] installed haskell-unliftio-core (0.1.1.0-2)
+[2018-06-02 12:04] [ALPM] installed haskell-resourcet (1.2.1-7)
+[2018-06-02 12:04] [ALPM] installed haskell-conduit (1.3.0.2-10)
+[2018-06-02 12:04] [ALPM] installed haskell-yaml (0.8.30-14)
+[2018-06-02 12:04] [ALPM] installed cgrep (6.6.25-22)
+[2018-06-02 12:04] [ALPM] transaction completed
+[2018-06-02 12:04] [ALPM] running 'detect-old-perl-modules.hook'...
+[2018-06-02 12:04] [ALPM] running 'ghc-register.hook'...
+[2018-06-02 12:04] [ALPM] running 'systemd-update.hook'...
+[2018-06-02 12:04] [ALPM] running 'texinfo-install.hook'...
+[2018-06-15 16:25] [PACMAN] Running 'pacman -S evince'
+[2018-06-15 16:26] [ALPM] transaction started
+[2018-06-15 16:26] [ALPM] reinstalled evince (3.28.2-1)
+[2018-06-15 16:26] [ALPM] transaction completed
+[2018-06-15 16:26] [ALPM] running 'glib-compile-schemas.hook'...
+[2018-06-15 16:26] [ALPM] running 'gtk-update-icon-cache.hook'...
+[2018-06-15 16:26] [ALPM] running 'systemd-update.hook'...
+[2018-06-15 16:26] [ALPM] running 'update-desktop-database.hook'...
+[2018-06-19 16:28] [PACMAN] Running 'pacman -S python'
+[2018-06-19 16:29] [ALPM] transaction started
+[2018-06-19 16:29] [ALPM] reinstalled python (3.6.5-3)
+[2018-06-19 16:29] [ALPM] transaction completed
+[2018-06-19 16:29] [ALPM] running 'systemd-update.hook'...
+[2018-06-24 09:53] [PACMAN] Running 'pacman -S idle3'
+[2018-06-24 10:06] [PACMAN] Running 'pacman -S tk'
+[2018-06-24 10:06] [ALPM] transaction started
+[2018-06-24 10:06] [ALPM] installed tcl (8.6.8-3)
+[2018-06-24 10:06] [ALPM] installed tk (8.6.8-3)
+[2018-06-24 10:06] [ALPM] transaction completed
+[2018-06-24 10:06] [ALPM] running 'systemd-update.hook'...
